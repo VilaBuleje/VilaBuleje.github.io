@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* nav */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    color: rgb(12, 36, 248);
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+  
+.nav-links a {
+    text-decoration: none;
+    color: rgb(12, 36, 248);
+    font-size: 1em;
+}
+  
+.colegio_Menu {
+    display: none;
+    font-size: 1.5em;
+}
+
+/*section de la presentacion, varias imagenes rotando*/
+
+.section_presentacion{
+    background-color: rgb(255, 0, 212);
+}
+.presentacion_colegio{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+/*section de personal*/
+
+.section_personal{
+    background-color: yellow;       
+}
+
+.personal_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.personal_texto{
+    flex: 1;
+    background-color: white;
+    width: 49%;
+    margin:auto 7%;
+}
+
+.personal_texto h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.personal_texto p{
+    font-size: 19px;
+    text-align: justify;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.personal_texto_boton{
+    margin-bottom: 20px;
+}
+
+.personal_texto_boton button{
+    padding: 5px 25px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 10px;
+    background-color: rgb(226, 226, 40);
+    border-radius: 0;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.personal_imagen{
+    flex:1.14;
+    background-color: green;
+
+}
+.personal_imagen_colper{
+    width: 95%;
+    height: 400px;
+    margin: 20px;
+    position: relative;
+}
+
+/*section frase*/
+
+.section_frase{
+    background-color: aqua;
+    display: block;
+    padding: 40px;
+    color: #fff;
+}  
+
+.frase_div{
+    margin: 0px auto;
+    row-gap: 40px;
+}
+
+.frase_div h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.frase_div p{
+    font-style: italic;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.frase_div h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+/*section de el texto e imagen personal*/
+
+.personal {
+    display:flex;
+    background-color: green;
+}
+
+.video_informativo {
+    background-color: blue;
+}
+
+
+footer{
+    display: flex;
+    background-color: red;
+}
+  /* Diseño responsivo */
+@media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Ocultamos los enlaces por defecto */
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex; /* Mostramos los enlaces cuando el menú está activo */
+    }
+    
+    .colegio_Menu {
+        display: block; /* Mostramos el icono del menú en pantallas pequeñas */
+        cursor: pointer;
+    }
+}
+    
+  
